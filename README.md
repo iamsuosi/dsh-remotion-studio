@@ -28,6 +28,18 @@ dsh plugin --profile web add github:iamsuosi/dsh-remotion-studio
 
 Restart DSH after install.
 
+## Install notes
+
+- The plugin is published with a prebuilt `lib/`, so the npm install needs no build step.
+- Installing from GitHub source runs `npm run build` during install. If your DSH profile blocks install scripts, allow this package in the profile's `pnpm-workspace.yaml`:
+
+  ```yaml
+  allowBuilds:
+    '@iamsuosi/dsh-remotion-studio': true
+  ```
+
+- The sidebar panel appears in the DSH web UI as **Remotion Studio**. It only renders client-side; the tools work in any profile.
+
 ## Requirements
 
 - Node.js 22 or later

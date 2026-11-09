@@ -28,6 +28,18 @@ dsh plugin --profile web add github:iamsuosi/dsh-remotion-studio
 
 安装后重启 DSH。
 
+## 安装说明
+
+- npm 包已内置编译好的 `lib/`，安装时不需要额外构建。
+- 从 GitHub 源码安装时会在安装过程中执行 `npm run build`。如果你的 DSH profile 拦截了安装脚本，请在 profile 的 `pnpm-workspace.yaml` 中放行本包：
+
+  ```yaml
+  allowBuilds:
+    '@iamsuosi/dsh-remotion-studio': true
+  ```
+
+- 侧栏面板以 **Remotion Studio** 的名字出现在 DSH Web 界面中。面板只负责前端展示，工具在任何 profile 下都可用。
+
 ## 环境要求
 
 - Node.js 22 或更高版本
