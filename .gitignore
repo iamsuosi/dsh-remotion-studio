@@ -1,5 +1,4 @@
 node_modules/
-lib/
 *.log
 .DS_Store
 *.local
@@ -8,3 +7,5 @@ lib/
 .npm-cache/
 studio/out/
 .smoke/
+*.tgz
+package/
