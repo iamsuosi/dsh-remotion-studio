@@ -1,0 +1,6 @@
+{
+  "name": "dsh-remotion-studio-skill",
+  "version": "0.1.0",
+  "description": "Standalone skill files for dsh-remotion-studio.",
+  "private": true
+}

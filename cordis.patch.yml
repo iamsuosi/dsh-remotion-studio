@@ -1,0 +1,19 @@
+# dsh-remotion-studio: agent-first Remotion video studio plugin.
+#
+# Registers tools:
+#   - remotion_themes  : list built-in video themes/templates
+#   - remotion_scan    : scan a plugin repo or asset folder
+#   - remotion_plan    : turn a brief into a storyboard + case JSON
+#   - remotion_render  : render a 16:9 video, poster and/or 3:4 promo image
+#   - remotion_edit    : edit an existing case JSON
+#
+# Optional config:
+#   - id: dsh-remotion-studio
+#     config:
+#       outputDir: ./videos      # default output directory
+#       defaultTheme: plugin-promo
+#       defaultDurationSeconds: 24
+- insert:
+    - id: dsh-remotion-studio
+      name: '@iamsuosi/dsh-remotion-studio'
+      config: {}

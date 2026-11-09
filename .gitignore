@@ -1,0 +1,10 @@
+node_modules/
+lib/
+*.log
+.DS_Store
+*.local
+.studio-out/
+.videos/
+.npm-cache/
+studio/out/
+.smoke/

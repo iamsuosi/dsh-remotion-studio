@@ -1,0 +1,38 @@
+{
+  "plugin": {
+    "name": "dsh-remotion-studio",
+    "handle": "dsh-remotion-studio",
+    "version": "0.1.0",
+    "description": "Agent-first Remotion video studio for DeepSeek Harness.",
+    "repo": "https://github.com/iamsuosi/dsh-remotion-studio",
+    "installCommand": "dsh plugin add @iamsuosi/dsh-remotion-studio",
+    "downloads": "-",
+    "stars": "-"
+  },
+  "features": [
+    {
+      "title": "Scan",
+      "description": "Collect plugin facts and screenshots automatically."
+    },
+    {
+      "title": "Plan",
+      "description": "Turn a brief into a structured video case JSON."
+    },
+    {
+      "title": "Render",
+      "description": "Generate MP4, poster and promo images locally with Remotion."
+    }
+  ],
+  "promo": {
+    "problem": "Making promo videos for DSH plugins is tedious and manual.",
+    "solution": "dsh-remotion-studio — let your agent render it.",
+    "steps": [
+      "Install the plugin",
+      "Call remotion_plan",
+      "Call remotion_render"
+    ],
+    "address": "https://github.com/iamsuosi/dsh-remotion-studio"
+  },
+  "theme": "plugin-promo",
+  "durationSeconds": 24
+}
